@@ -1,0 +1,84 @@
+@import '_header';
+@import '_blok';
+$s:#757575;
+$t:#F5F4FA;
+main{
+margin:0 20px;
+max-width: 1170px;
+margin: auto;
+}
+h2,h3,h4,h5,h6{
+  font-weight: 700;
+}
+section{
+
+  
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  
+}
+.top{
+  margin: 94px 0;
+  .blok_time{
+    width: 270px;
+    font-size: 14px;
+    p{
+      color: $s;
+      margin: 10px;
+    }
+  }
+}
+h2{
+  text-align: center;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+}
+.work{
+  padding-bottom: 94px;
+  img{
+    width: 360px;
+    
+    display: block;
+  }
+}
+
+.team_work{
+  width: 100%;
+  
+  padding-bottom: 94px;
+  //position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: $t;
+    z-index: -1;
+  }
+  .team{
+    width: 270px;
+    text-align: center;
+    font-size: 16px;
+    color: $s;
+    background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+p{
+  margin-bottom: 30px;
+}
+    h4{
+      margin: 30px 0 10px 0;
+      font-size: 16px;
+      color: black;
+      font-weight: 500;
+    }
+    img{
+      width: 100%;
+    }
+  }
+}
